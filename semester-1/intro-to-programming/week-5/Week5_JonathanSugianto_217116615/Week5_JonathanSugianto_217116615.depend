@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1510109120 source:c:\users\jonathan\documents\tugaspraktikum\mingguke-5\week5_jonathansugianto_217116615\main.cpp
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	<windows.h>
+	<conio.h>
+
