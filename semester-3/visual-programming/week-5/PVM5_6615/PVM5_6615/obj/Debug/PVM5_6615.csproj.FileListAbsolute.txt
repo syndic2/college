@@ -1,0 +1,13 @@
+C:\Users\Jonathan\Documents\College\Semester_3\PRAKTIKUM (PV)\Minggu_5\PVM5_6615\PVM5_6615\bin\Debug\PVM5_6615.exe.config
+C:\Users\Jonathan\Documents\College\Semester_3\PRAKTIKUM (PV)\Minggu_5\PVM5_6615\PVM5_6615\bin\Debug\PVM5_6615.exe
+C:\Users\Jonathan\Documents\College\Semester_3\PRAKTIKUM (PV)\Minggu_5\PVM5_6615\PVM5_6615\bin\Debug\PVM5_6615.pdb
+C:\Users\Jonathan\Documents\College\Semester_3\PRAKTIKUM (PV)\Minggu_5\PVM5_6615\PVM5_6615\obj\Debug\PVM5_6615.csprojResolveAssemblyReference.cache
+C:\Users\Jonathan\Documents\College\Semester_3\PRAKTIKUM (PV)\Minggu_5\PVM5_6615\PVM5_6615\obj\Debug\PVM5_6615.Properties.Resources.resources
+C:\Users\Jonathan\Documents\College\Semester_3\PRAKTIKUM (PV)\Minggu_5\PVM5_6615\PVM5_6615\obj\Debug\PVM5_6615.csproj.GenerateResource.Cache
+C:\Users\Jonathan\Documents\College\Semester_3\PRAKTIKUM (PV)\Minggu_5\PVM5_6615\PVM5_6615\obj\Debug\PVM5_6615.exe
+C:\Users\Jonathan\Documents\College\Semester_3\PRAKTIKUM (PV)\Minggu_5\PVM5_6615\PVM5_6615\obj\Debug\PVM5_6615.pdb
+C:\Users\Jonathan\Documents\College\Semester_3\PRAKTIKUM (PV)\Minggu_5\PVM5_6615\PVM5_6615\bin\Debug\cLibrary.dll
+C:\Users\Jonathan\Documents\College\Semester_3\PRAKTIKUM (PV)\Minggu_5\PVM5_6615\PVM5_6615\bin\Debug\cLibrary.pdb
+C:\Users\Jonathan\Documents\College\Semester_3\PRAKTIKUM (PV)\Minggu_5\PVM5_6615\PVM5_6615\obj\Debug\PVM5_6615.mainForm.resources
+C:\Users\Jonathan\Documents\College\Semester_3\PRAKTIKUM (PV)\Minggu_5\PVM5_6615\PVM5_6615\obj\Debug\PVM5_6615.dataForm.resources
+C:\Users\Jonathan\Documents\College\Semester_3\PRAKTIKUM (PV)\Minggu_5\PVM5_6615\PVM5_6615\obj\Debug\PVM5_6615.pForm.resources

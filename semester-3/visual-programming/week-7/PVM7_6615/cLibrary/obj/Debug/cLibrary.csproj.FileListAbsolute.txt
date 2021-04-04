@@ -1,0 +1,5 @@
+C:\Users\Jonathan\Documents\College\Semester_3\PRAKTIKUM (PV)\Minggu_7\PVM7_6615\cLibrary\bin\Debug\cLibrary.dll
+C:\Users\Jonathan\Documents\College\Semester_3\PRAKTIKUM (PV)\Minggu_7\PVM7_6615\cLibrary\bin\Debug\cLibrary.pdb
+C:\Users\Jonathan\Documents\College\Semester_3\PRAKTIKUM (PV)\Minggu_7\PVM7_6615\cLibrary\obj\Debug\cLibrary.dll
+C:\Users\Jonathan\Documents\College\Semester_3\PRAKTIKUM (PV)\Minggu_7\PVM7_6615\cLibrary\obj\Debug\cLibrary.pdb
+C:\Users\Jonathan\Documents\College\Semester_3\PRAKTIKUM (PV)\Minggu_7\PVM7_6615\cLibrary\obj\Debug\cLibrary.csprojResolveAssemblyReference.cache

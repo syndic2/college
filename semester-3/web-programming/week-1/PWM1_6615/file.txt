@@ -1,0 +1,4 @@
+letak css mouse hover
+1. di bagian navigation bar setiap halaman
+2. di bagian gambar boneka(kerudung merah) pada halaman home
+3. di bagian gambar boneka pada halaman news

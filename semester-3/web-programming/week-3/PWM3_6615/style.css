@@ -1,0 +1,115 @@
+.container {
+	background-color: green;
+	width: 1200px;
+	height: 600px;
+	margin: auto;
+}
+
+.listplant {
+	background-color: brown;
+	border: 2px solid red;
+	border-radius: 5px;
+	width: 600px;
+	height: 150px;
+}
+
+.plant {
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 140px;
+	height: 150px;
+	float: left;
+}
+
+.resource {	
+	width: 150px;
+	height: 150px;
+	font-family: monospace;
+	font-size: 50px;
+	color: white;
+	text-align: center;
+	float: left;
+}
+
+.sundrop {
+	background-image: url("images/Sun.png");
+	background-size: cover;
+	width: 100px;
+	height: 90px;
+	position: absolute;
+}
+
+.sungrowth {
+	background-image: url("images/Sun.png");
+	background-size: cover;
+	width: 50px;
+	height: 40px;
+	position: absolute;
+}
+
+#suns {
+	background-image: url("images/Sun.png");
+	background-size: cover;
+	margin: auto;
+	width: 100px;
+	height: 90px;
+}
+
+#peas {
+	background-image: url("images/Peashooter_HD.png");
+}
+
+#sunflow {
+	background-image: url("images/Sunflower_HD.png");
+}
+
+.bullet {
+	background-color: lightgreen;
+	border-radius: 100%;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+}
+
+.zombie {
+	background-image: url("images/zombie1.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 150px;
+	position: absolute;
+	left: 1200px;
+}
+
+.baris {
+	background-image: url("images/plants-vs-zombies-screenshot.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: -100px 0px;
+	height: 150px;
+	text-align: center;
+}
+
+.petakbaris1 {
+	border: 1px solid black;
+	box-sizing: border-box;	
+	width: 150px;
+	height: 150px;
+	float: left;
+}
+
+.petakbaris2 {
+	border: 1px solid black;
+	box-sizing: border-box;	
+	width: 150px;
+	height: 150px;
+	float: left;
+}
+
+.petakbaris3 {
+	border: 1px solid black;
+	box-sizing: border-box;	
+	width: 150px;
+	height: 150px;
+	float: left;
+}
