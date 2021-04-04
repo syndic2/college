@@ -1,0 +1,90 @@
+--1
+
+Club Aktif Transfer 3 Tahun
+------------------------------
+Arsenal
+Chelsea
+Real Madrid
+Barcelona
+Manchester United
+Manchester City
+
+6 rows selected.
+
+
+--2
+
+Nama Negara     Stadion Terbesar     Kapasitas Stadion Rata2
+--------------- -------------------- ---------------------------
+SPAIN           Mestalla Stadium            68356 Orang
+ITALY           Stadio Olimpico             49629 Orang
+FRANCE          Parc des Princes            47900 Orang
+JAPAN           Nissan Stadium              46040 Orang
+ENGLAND         Ewood Park                  42278 Orang
+BELGIUM         Vanden Stock                24760 Orang
+
+
+--3
+
+NAMA_MANAGER         NAMA_CLUB
+-------------------- --------------------
+Alex Ferguson        Manchester United
+Arsene Wenger        Arsenal
+Josep Guardiola      Manchester City
+Maurizio Sarri       Chelsea
+Christophe Galtier   Liverpool
+Jurgen Klopp         Liverpool
+Mauricio Pochettino  Tottenham
+Ernesto Valverde     Barcelona
+Santiago Solari      Real Madrid
+Diego Simeone        Atletico Madrid
+Pablo Machin         Sevilla
+
+NAMA_MANAGER         NAMA_CLUB
+-------------------- --------------------
+Marcelino Toral      Valencia
+Massimiliano Allegri Juventus
+Gennaro Gattuso      AC Milan
+Luciano Spalletti    Inter Milan
+Carlo Ancelotti      Napoli
+Eusebio Di Francesco AS Roma
+Thomas Tuchel        Paris Saint Germain
+Leonardo Jardim      AS Monaco
+Bruno Genesio        Lyon
+Rudi Garcia          Marseille
+Fernando Santos      Santos
+
+NAMA_MANAGER         NAMA_CLUB
+-------------------- --------------------
+Carlos Parreira      Sao Paulo
+Abel Braga           Flamengo
+Renato Portaluppi
+Jose Mourinho
+Kenny Dalglish
+Zinedine Zidane
+Tsuneyasu Miyamoto
+Marcelo Gallardo
+Paolo Maldini
+Greg Abbot
+Harry Redknapp
+
+NAMA_MANAGER         NAMA_CLUB
+-------------------- --------------------
+Gustavo Alfaro
+
+34 rows selected.
+
+
+--4
+
+NAMA_PLAYER          TOTAL_PENJUALAN NEGARA_ASAL
+-------------------- --------------- ---------------
+       Romelu Lukaku        99000000 BELGIUM
+              Neymar       150000000 BRAZIL
+Cristiano Ronaldo          160000000 PORTUGAL
+Angel Di Maria             100000000 ARGENTINA
+Paul Pogba                  73500000 FRANCE
+Diego Costa                 85000000 SPAIN
+  Philippe Countinho        99000000 BRAZIL
+
+7 rows selected.

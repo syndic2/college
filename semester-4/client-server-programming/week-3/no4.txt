@@ -1,0 +1,280 @@
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :         Dani Alves|
+|TANGGAL TRANSFER :         01-AUG2014|
+|CLUB ASAL        :          Barcelona|
+|CLUB BARU        :Paris Saint Germain|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :             Neymar|
+|TANGGAL TRANSFER :         01-AUG2014|
+|CLUB ASAL        :          Barcelona|
+|CLUB BARU        :Paris Saint Germain|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :        Diego Costa|
+|TANGGAL TRANSFER :         01-JAN2018|
+|CLUB ASAL        :            Chelsea|
+|CLUB BARU        :    Atletico Madrid|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :         Dani Alves|
+|TANGGAL TRANSFER :         01-JUL0207|
+|CLUB ASAL        :          Barcelona|
+|CLUB BARU        :           Juventus|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :          Juan Mata|
+|TANGGAL TRANSFER :         01-JUL2007|
+|CLUB ASAL        :        Real Madrid|
+|CLUB BARU        :           Valencia|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :       Gerard Pique|
+|TANGGAL TRANSFER :         01-JUL2008|
+|CLUB ASAL        :  Manchester United|
+|CLUB BARU        :          Barcelona|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :  Cristiano Ronaldo|
+|TANGGAL TRANSFER :         01-JUL2009|
+|CLUB ASAL        :  Manchester United|
+|CLUB BARU        :        Real Madrid|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :       David de Gea|
+|TANGGAL TRANSFER :         01-JUL2011|
+|CLUB ASAL        :    Atletico Madrid|
+|CLUB BARU        :  Manchester United|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :    Hector Bellerin|
+|TANGGAL TRANSFER :         01-JUL2011|
+|CLUB ASAL        :          Barcelona|
+|CLUB BARU        :            Arsenal|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :         Jordi Alba|
+|TANGGAL TRANSFER :         01-JUL2012|
+|CLUB ASAL        :           Valencia|
+|CLUB BARU        :          Barcelona|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :             Neymar|
+|TANGGAL TRANSFER :         01-JUL2013|
+|CLUB ASAL        :             Santos|
+|CLUB BARU        :          Barcelona|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :       Ivan Rakitic|
+|TANGGAL TRANSFER :         01-JUL2014|
+|CLUB ASAL        :            Sevilla|
+|CLUB BARU        :          Barcelona|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :    Mario Mandzukic|
+|TANGGAL TRANSFER :         01-JUL2015|
+|CLUB ASAL        :    Atletico Madrid|
+|CLUB BARU        :           Juventus|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :          Petr Cech|
+|TANGGAL TRANSFER :         01-JUL2015|
+|CLUB ASAL        :            Chelsea|
+|CLUB BARU        :            Arsenal|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :     Javier Pastore|
+|TANGGAL TRANSFER :         01-JUL2018|
+|CLUB ASAL        :Paris Saint Germain|
+|CLUB BARU        :            AS Roma|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :      Danny Welbeck|
+|TANGGAL TRANSFER :         01-SEP2014|
+|CLUB ASAL        :  Manchester United|
+|CLUB BARU        :            Arsenal|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :    Anthony Martial|
+|TANGGAL TRANSFER :         01-SEP2015|
+|CLUB ASAL        :          AS Monaco|
+|CLUB BARU        :  Manchester United|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :      Romelu Lukaku|
+|TANGGAL TRANSFER :         02-SEP2014|
+|CLUB ASAL        :            Everton|
+|CLUB BARU        :            Chelsea|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :         Paul Pogba|
+|TANGGAL TRANSFER :         03-AUG2012|
+|CLUB ASAL        :  Manchester United|
+|CLUB BARU        :           Juventus|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :     Angel Di Maria|
+|TANGGAL TRANSFER :         06-AUG2015|
+|CLUB ASAL        :  Manchester United|
+|CLUB BARU        :Paris Saint Germain|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      : Philippe Countinho|
+|TANGGAL TRANSFER :         06-JAN2013|
+|CLUB ASAL        :        Inter Milan|
+|CLUB BARU        :          Liverpool|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      : Philippe Countinho|
+|TANGGAL TRANSFER :         06-JAN2018|
+|CLUB ASAL        :          Liverpool|
+|CLUB BARU        :          Barcelona|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :        Diego Costa|
+|TANGGAL TRANSFER :         07-JAN2014|
+|CLUB ASAL        :    Atletico Madrid|
+|CLUB BARU        :            Chelsea|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :         Mesut Ozil|
+|TANGGAL TRANSFER :         09-AUG2016|
+|CLUB ASAL        :        Real Madrid|
+|CLUB BARU        :            Arsenal|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :         Paul Pogba|
+|TANGGAL TRANSFER :         09-AUG2016|
+|CLUB ASAL        :           Juventus|
+|CLUB BARU        :  Manchester United|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :      Ander Herrera|
+|TANGGAL TRANSFER :         09-AUG2017|
+|CLUB ASAL        :          AS Monaco|
+|CLUB BARU        :  Manchester United|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :      Romelu Lukaku|
+|TANGGAL TRANSFER :         10-JUL2017|
+|CLUB ASAL        :            Everton|
+|CLUB BARU        :  Manchester United|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :  Cristiano Ronaldo|
+|TANGGAL TRANSFER :         10-JUL2018|
+|CLUB ASAL        :        Real Madrid|
+|CLUB BARU        :           Juventus|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :      Samuel Umtiti|
+|TANGGAL TRANSFER :         12-JUN2016|
+|CLUB ASAL        :               Lyon|
+|CLUB BARU        :          Barcelona|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :          Juan Mata|
+|TANGGAL TRANSFER :         24-AUG2011|
+|CLUB ASAL        :           Valencia|
+|CLUB BARU        :            Chelsea|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :          Juan Mata|
+|TANGGAL TRANSFER :         24-AUG2014|
+|CLUB ASAL        :            Chelsea|
+|CLUB BARU        :  Manchester United|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :     Angel Di Maria|
+|TANGGAL TRANSFER :         25-AUG2014|
+|CLUB ASAL        :        Real Madrid|
+|CLUB BARU        :  Manchester United|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :       Lionel Messi|
+|TANGGAL TRANSFER :         27-AUG2012|
+|CLUB ASAL        :          Tottenham|
+|CLUB BARU        :        Real Madrid|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :        Filipe Luis|
+|TANGGAL TRANSFER :         28-JUL2015|
+|CLUB ASAL        :            Chelsea|
+|CLUB BARU        :    Atletico Madrid|
+=======================================
+=======================================
+|            INFO TRANSFER            |
+=======================================
+|NAMA PLAYER      :      Romelu Lukaku|
+|TANGGAL TRANSFER :         31-MAY2014|
+|CLUB ASAL        :            Chelsea|
+|CLUB BARU        :            Everton|
+=======================================

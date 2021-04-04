@@ -1,0 +1,15 @@
+C:\Users\Jonathan\Documents\College\Semester_4\PRAKTIKUM (PCS)\Minggu_6\App_M6\App_M6\bin\Debug\App_M6.exe.config
+C:\Users\Jonathan\Documents\College\Semester_4\PRAKTIKUM (PCS)\Minggu_6\App_M6\App_M6\bin\Debug\App_M6.exe
+C:\Users\Jonathan\Documents\College\Semester_4\PRAKTIKUM (PCS)\Minggu_6\App_M6\App_M6\bin\Debug\App_M6.pdb
+C:\Users\Jonathan\Documents\College\Semester_4\PRAKTIKUM (PCS)\Minggu_6\App_M6\App_M6\bin\Debug\Oracle.DataAccess.dll
+C:\Users\Jonathan\Documents\College\Semester_4\PRAKTIKUM (PCS)\Minggu_6\App_M6\App_M6\obj\Debug\App_M6.csprojAssemblyReference.cache
+C:\Users\Jonathan\Documents\College\Semester_4\PRAKTIKUM (PCS)\Minggu_6\App_M6\App_M6\obj\Debug\App_M6.club.resources
+C:\Users\Jonathan\Documents\College\Semester_4\PRAKTIKUM (PCS)\Minggu_6\App_M6\App_M6\obj\Debug\App_M6.personel.resources
+C:\Users\Jonathan\Documents\College\Semester_4\PRAKTIKUM (PCS)\Minggu_6\App_M6\App_M6\obj\Debug\App_M6.utama.resources
+C:\Users\Jonathan\Documents\College\Semester_4\PRAKTIKUM (PCS)\Minggu_6\App_M6\App_M6\obj\Debug\App_M6.Properties.Resources.resources
+C:\Users\Jonathan\Documents\College\Semester_4\PRAKTIKUM (PCS)\Minggu_6\App_M6\App_M6\obj\Debug\App_M6.csproj.GenerateResource.cache
+C:\Users\Jonathan\Documents\College\Semester_4\PRAKTIKUM (PCS)\Minggu_6\App_M6\App_M6\obj\Debug\App_M6.csproj.CoreCompileInputs.cache
+C:\Users\Jonathan\Documents\College\Semester_4\PRAKTIKUM (PCS)\Minggu_6\App_M6\App_M6\obj\Debug\App_M6.csproj.CopyComplete
+C:\Users\Jonathan\Documents\College\Semester_4\PRAKTIKUM (PCS)\Minggu_6\App_M6\App_M6\obj\Debug\App_M6.exe
+C:\Users\Jonathan\Documents\College\Semester_4\PRAKTIKUM (PCS)\Minggu_6\App_M6\App_M6\obj\Debug\App_M6.pdb
+C:\Users\Jonathan\Documents\College\Semester_4\PRAKTIKUM (PCS)\Minggu_6\App_M6\App_M6\obj\Debug\App_M6.transaksi.resources

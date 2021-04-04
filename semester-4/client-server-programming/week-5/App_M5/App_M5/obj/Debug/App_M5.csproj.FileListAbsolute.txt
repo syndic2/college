@@ -1,0 +1,14 @@
+C:\Users\Jonathan\Documents\College\Semester_4\PRAKTIKUM (PCS)\Minggu_5\App_M5\App_M5\bin\Debug\App_M5.exe.config
+C:\Users\Jonathan\Documents\College\Semester_4\PRAKTIKUM (PCS)\Minggu_5\App_M5\App_M5\bin\Debug\App_M5.exe
+C:\Users\Jonathan\Documents\College\Semester_4\PRAKTIKUM (PCS)\Minggu_5\App_M5\App_M5\bin\Debug\App_M5.pdb
+C:\Users\Jonathan\Documents\College\Semester_4\PRAKTIKUM (PCS)\Minggu_5\App_M5\App_M5\obj\Debug\App_M5.csprojAssemblyReference.cache
+C:\Users\Jonathan\Documents\College\Semester_4\PRAKTIKUM (PCS)\Minggu_5\App_M5\App_M5\obj\Debug\App_M5.utama.resources
+C:\Users\Jonathan\Documents\College\Semester_4\PRAKTIKUM (PCS)\Minggu_5\App_M5\App_M5\obj\Debug\App_M5.Properties.Resources.resources
+C:\Users\Jonathan\Documents\College\Semester_4\PRAKTIKUM (PCS)\Minggu_5\App_M5\App_M5\obj\Debug\App_M5.csproj.GenerateResource.cache
+C:\Users\Jonathan\Documents\College\Semester_4\PRAKTIKUM (PCS)\Minggu_5\App_M5\App_M5\obj\Debug\App_M5.csproj.CoreCompileInputs.cache
+C:\Users\Jonathan\Documents\College\Semester_4\PRAKTIKUM (PCS)\Minggu_5\App_M5\App_M5\obj\Debug\App_M5.exe
+C:\Users\Jonathan\Documents\College\Semester_4\PRAKTIKUM (PCS)\Minggu_5\App_M5\App_M5\obj\Debug\App_M5.pdb
+C:\Users\Jonathan\Documents\College\Semester_4\PRAKTIKUM (PCS)\Minggu_5\App_M5\App_M5\obj\Debug\App_M5.club.resources
+C:\Users\Jonathan\Documents\College\Semester_4\PRAKTIKUM (PCS)\Minggu_5\App_M5\App_M5\obj\Debug\App_M5.personel.resources
+C:\Users\Jonathan\Documents\College\Semester_4\PRAKTIKUM (PCS)\Minggu_5\App_M5\App_M5\bin\Debug\Oracle.DataAccess.dll
+C:\Users\Jonathan\Documents\College\Semester_4\PRAKTIKUM (PCS)\Minggu_5\App_M5\App_M5\obj\Debug\App_M5.csproj.CopyComplete
