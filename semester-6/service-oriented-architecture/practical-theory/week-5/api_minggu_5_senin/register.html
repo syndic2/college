@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register Page</title>
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h1>Register Page</h1>
+        <form id="formRegister">
+            Username: <input type="text" name="username"> <br>
+            Password: <input type="text" name="password"> <br>
+            Nama: <input type="text" name="nama"> <br>
+            <input type="submit" name="Register">
+        </form>
+        <a href="./login.html">
+            <button>Go To Login</button>
+        </a>
+    </body>
+    <script>
+        $(document).ready(function() {
+            $('#formRegister').submit(function(e) {
+                e.preventDefault();
+
+                $.ajax({
+                    url: 'http://localhost:3000/api/registerUser',
+                    method: 'POST',
+                    data: $(this).serialize(),
+                    success: (result) => {
+                        alert(result.message);
+                    }
+                });
+            });
+        });
+    </script>
+</html>

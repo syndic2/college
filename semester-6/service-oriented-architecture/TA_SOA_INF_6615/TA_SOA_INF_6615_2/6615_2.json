@@ -1,0 +1,277 @@
+{
+	"info": {
+		"_postman_id": "623a06e9-2b36-478f-86df-829c4566c5d1",
+		"name": "6615_2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/api/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email_user",
+							"value": "gidion@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "password_user",
+							"value": "asd",
+							"type": "text"
+						},
+						{
+							"key": "nama_user",
+							"value": "felix",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/loginUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email_user",
+							"value": "gidion@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "password_user",
+							"value": "asd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/loginUser",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"loginUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/topUp",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZlbGl4QG1haWwuY29tIiwidGlwZV91c2VyIjowLCJzYWxkb191c2VyIjowLCJpYXQiOjE1ODgxNDQ1MDl9.TDAFaq2kUhRJMcYI3oCj3Qmn-I2KElJdnaCH0qgTK4c",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email_user",
+							"value": "felix@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "jumlah_topup",
+							"value": "200000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/topUp",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"topUp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/getPremium",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZlbGl4QG1haWwuY29tIiwidGlwZV91c2VyIjowLCJzYWxkb191c2VyIjowLCJpYXQiOjE1ODgxNDQ1MDl9.TDAFaq2kUhRJMcYI3oCj3Qmn-I2KElJdnaCH0qgTK4c",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email_user",
+							"value": "felix@mail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/getPremium",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"getPremium"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/addSubscription",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZlbGl4QG1haWwuY29tIiwidGlwZV91c2VyIjowLCJzYWxkb191c2VyIjowLCJpYXQiOjE1ODgxNDQ1MDl9.TDAFaq2kUhRJMcYI3oCj3Qmn-I2KElJdnaCH0qgTK4c",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email_user",
+							"value": "felix@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "jumlah_hit",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/addSubscription",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"addSubscription"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/searchBerita",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZlbGl4QG1haWwuY29tIiwidGlwZV91c2VyIjowLCJzYWxkb191c2VyIjowLCJpYXQiOjE1ODgxNDQ1MDl9.TDAFaq2kUhRJMcYI3oCj3Qmn-I2KElJdnaCH0qgTK4c",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/searchBerita?query=corona",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"searchBerita"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "corona"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/getHeadnlineNews",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdpZGlvbkBtYWlsLmNvbSIsInRpcGVfdXNlciI6MCwic2FsZG9fdXNlciI6MCwiaWF0IjoxNTg4MTQ3ODAzfQ.E_oguGMoaxiCTJ0rxLIlEDaByH1VTmDkXJwdgqSYfT8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3000/api/getHeadlineNews?category=technology&country=id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"getHeadlineNews"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "technology"
+						},
+						{
+							"key": "country",
+							"value": "id"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Page</title>
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <a href="./login.html">
+            <button>Logout</button>
+        </a>
+        <h1>Admin Page</h1>
+        <h3>Add Product</h3>
+        <form id="formAdd">
+            Nama Product: <input type="text" name="nama_product"> <br>
+            Harga Product: <input type="text" name="harga_product"> <br>
+            Kategori Product: 
+            <select name="kategori_product">
+                <option value="0">Makanan</option>
+                <option value="1">Minuman</option>
+                <option value="2">Houseneeds</option>
+            </select> <br>
+            <input type="submit" name="Add Barang">
+        </form>
+
+        <h3>List Product</h3>
+        <table id="listProduct" border="1">
+            <thead>
+                <tr>
+                    <th>ID Product</th>
+                    <th>Nama Product</th>
+                    <th>Harga Product</th>
+                    <th>Kategori Product</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+        </table>
+        <script>            
+            function deleteProduct(id) {
+                $.ajax({
+                    url: `http://localhost:3000/api/deleteProduct/${id}`,
+                    method: 'DELETE',
+                    success: (result) => {
+                        alert(result.message);
+                        window.location.reload();
+                    }
+                });
+            }
+
+            $(document).ready(function() {
+                getAllProducts();
+    
+                $('#formAdd').submit(function(e) {
+                    e.preventDefault();
+    
+                    $.ajax({
+                        url: 'http://localhost:3000/api/addProduct',
+                        method: 'POST',
+                        data: $(this).serialize(),
+                        success: (result) => {
+                            alert(result.message);
+                            window.location.reload();
+                        }
+                    });
+                });
+    
+                function getAllProducts() {
+                    $.ajax({
+                        url: 'http://localhost:3000/api/getAllProducts',
+                        method: 'get',
+                        dataType: 'json',
+                        success: (result) => {
+                            let tr= '';
+    
+                            result.forEach(item => {
+                                tr+= `
+                                    <tr>
+                                        <td>${item.id_product}</td>
+                                        <td>${item.nama_product}</td>
+                                        <td>${item.harga_product}</td>
+                                        <td>${item.kategori_product}</td>
+                                        <td>
+                                            <button onclick="deleteProduct(${item.id_product})" 
+                                                    value="${item.id_product}">
+                                                Delete
+                                            </button>
+                                        </td>
+                                    </tr>
+                                `
+                            });
+    
+                            $('#listProduct').append(tr);
+                        }
+                    });
+                }
+            });
+        </script>
+    </body>
+</html>

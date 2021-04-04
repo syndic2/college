@@ -1,0 +1,33 @@
+(import ke postman) collection endpoint terdapat pada file 'endpoint_minggu2.postman_collection.json'
+
+---- nama key yang terdapat pada setiap endpoint di dalam postman ----
+
+1. endpoint POST '/registerUser'
+* email_user
+* nama_user
+* password_user
+* tipe_user
+
+2. endpoint POST '/uploadSong'
+* id_user
+* judul_lagu
+* genre_lagu
+* durasi_lagu
+
+3. endpoint POST '/createPlaylist'
+* email_user
+* judul_playlist
+* collection_lagu (untuk input diberi pemisah ',' contoh: 1, 4, 3, ...)
+
+4. endpoint GET '/searchSongByKeyword/:keyword'
+* keyword (tab params --> path variables)
+
+5. endpoint DELETE '/deleteSong/:judul_lagu'
+* judul_lagu (tab params --> path variables)
+
+6. endpoint GET '/getPlaylist/:email_user'
+* email_user (tab params --> path variables)
+
+7. endpoint PUT '/updatePlaylist/:id_playlist'
+* id_playlist (tab params --> path variables)
+* judul_playlist (tab body)

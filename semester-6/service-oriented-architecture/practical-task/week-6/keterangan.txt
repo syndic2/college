@@ -1,0 +1,5 @@
+*endpoint /api/createRecipe
+
+cara ngisi bahan_makanan
+- dipisahkan pakai ','
+contoh: nasi putih, bawang, minyak goreng

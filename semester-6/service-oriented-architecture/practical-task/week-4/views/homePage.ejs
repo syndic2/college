@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+             * {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            body {
+                background-color: whitesmoke;
+            }
+
+            #newsBox {  
+                background-color: white;
+                font-size: 1.25vw;
+                width: 50%;
+                margin-top: 2.5%;
+                margin-left: 25%;
+                padding: 1%;
+                padding-top: 0%;
+            }
+
+            form {
+                width: 100%;
+            }
+
+            form textarea {
+                width: 100%;
+            }
+
+            form input[type=submit] {
+                margin-left: 94%;
+            }
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="/jquery-3.4.1.min.js"></script>
+        <title>Home Page</title>
+    </head>
+    <body>
+        <a href="http://localhost:3000/logout">
+            <button>Logout</button>
+        </a>
+        <h2 style="text-align: center;">MENIT COM</h2>
+
+        <% if (news) { %>
+            <% news.forEach(n => { %>
+                <div id="newsBox">
+                    <h3><%= n.judul_berita %></h3>
+                    <span><%= n.tgl_berita %></span> <br> <br>
+                    <img src="/uploads/<%= n.gambar_berita %>" width="100%"> <br>
+                    <p style="text-align: justify;"><%= n.isi_berita %></p> <br>
+
+                    <% if (n.comments.length) { %>
+                        <% n.comments.forEach(c => { %>
+                            <li style="list-style: none;">
+                                <span style="color: #2B3B94;">
+                                    <%= c.user_comment %></span>: 
+                                <span><%= c.komentar_comment %></span>
+                            </li> <br>
+                        <% }); %>
+                    <% } %>
+
+                    <form class="formComment">
+                        <textarea name="komentar_comment" placeholder="Type your comment here" cols="30" rows="5"></textarea>
+                        <input type="hidden" name="id" value="<%= n.id %>">
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            <% }); %>
+        <% } %>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function() {
+            $('.formComment').submit(function(e) {
+                e.preventDefault();
+
+                $.ajax({
+                    url: 'http://localhost:3000/commentBerita',
+                    type: 'POST',
+                    data: $(this).serialize(),
+                    success: (result) => {
+                        alert(result);
+                        window.location.reload();
+                    }
+                });
+            });
+        });
+    </script>
+</html>

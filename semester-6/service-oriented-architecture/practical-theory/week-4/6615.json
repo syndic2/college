@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "7e247aa1-9894-4dd2-8edc-b44759f9382d",
+		"name": "6615",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/api/user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "felix",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "asd",
+							"type": "text"
+						},
+						{
+							"key": "nomorhp",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/user",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/user/:username",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "jonsu",
+							"type": "text"
+						},
+						{
+							"key": "nomorhp",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "oldpassword",
+							"value": "dsa",
+							"type": "text"
+						},
+						{
+							"key": "newpassword",
+							"value": "asd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/user/:username",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						":username"
+					],
+					"variable": [
+						{
+							"key": "username",
+							"value": "jonsu123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/subscribe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "felix",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "asd",
+							"type": "text"
+						},
+						{
+							"key": "usercari",
+							"value": "jonsu",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/subscribe",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"subscribe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/subsribe",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3000/subsribe",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"subsribe"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

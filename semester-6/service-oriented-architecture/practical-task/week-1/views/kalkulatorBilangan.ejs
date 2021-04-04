@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            #nav {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            #nav a {
+                padding-top: 1.5%;
+                padding-bottom: 1.5%;
+            }
+
+            form {
+                text-align: center;
+            }
+
+            form input {
+                margin-top: 1%;
+                margin-bottom: 1%;
+            }
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>Kalkulator Bilangan</title>
+    </head>
+    <body>
+        <div id="nav">
+            <a href="http://localhost:8080/kalkulatorDecimalOctalPage">
+                <button>Ke Kalkulator Decimal Octal</button>
+            </a>
+            <h2>Kalkulator Bilangan Sederhana</h2>
+            <a href="http://localhost:8080/kalkulatorTanggalPage">
+                <button>Ke Kalkulator Tanggal</button>
+            </a>
+        </div>
+        
+        <form action="http://localhost:8080/calculateBilangan" method="POST">
+            Masukkan angka pertama <br>
+            <input type="number" name="val1" step="any"> <br>
+            
+            Masukkan angka kedua <br>
+            <input type="number" name="val2" step="any"> <br>
+
+            Pilih operator <br> <br>
+            <select name="operator">
+                <option value="add">+</option>
+                <option value="minus">-</option>
+                <option value="multiply">*</option>
+                <option value="division">/</option>
+            </select> <br>
+
+            <input type="submit" value="Hitung">
+        </form>
+
+        <% if (typeof result !== 'undefined') { %>
+            <br> 
+            <div style="text-align: center; font-size: 2vw;">
+                <%= result %>
+            </div>
+        <% } %>
+    </body>
+</html>

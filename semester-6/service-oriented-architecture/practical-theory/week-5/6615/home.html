@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page</title>
+    </head>
+    <body>
+        <h1 id="welcome"></h1>
+
+        <button id="btnEdit">Edit Profile</button> <br>
+
+        Jumlah Saldo: <span id="saldo"></span> <br>
+        Jumlah: <input type="text" id="jumlah">
+        <button id="btnTopUp">TOPUP</button> <br>
+
+        <a href="./login.html">
+            <button>Back</button>
+        </a> <br>
+
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <script>
+            const queryString = window.location.search;
+	        const urlParams = new URLSearchParams(queryString);
+            const nama = urlParams.get('nama');
+            const nohp = urlParams.get('nohp');
+            const saldo = urlParams.get('saldo');
+            const password= urlParams.get('password');
+
+            $('#welcome').text(`Welcome, ${nama}!`);
+            $('#saldo').html(saldo);
+
+            $('#btnTopUp').click(function() {
+                let saldo= $('#jumlah').val();
+
+                let params = {
+                    "nomorhp": nohp,
+                    "jumlah" : saldo,
+                    "password" : password,
+                };
+
+                $.ajax({
+                    url: 'http://localhost:3000/api/topup',
+                    method: 'POST',
+                    data : params,
+                    success : function(result){
+                        alert(result.message);
+                    }
+                });
+            });
+
+            $('#btnEdit').click(function() {
+                window.location.href= `./editProfile.html?nama=${nama}&nohp=${nohp}&saldo=${saldo}&password=${password}`;
+            });
+        </script>
+    </body>
+</html>

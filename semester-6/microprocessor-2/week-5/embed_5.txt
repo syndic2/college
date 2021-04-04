@@ -1,0 +1,161 @@
+#include <Keypad.h>
+#include <LiquidCrystal.h>
+
+LiquidCrystal lcd(5, 4, 3, 2, A4, A5);
+
+
+const byte ROWS = 4; //four rows
+const byte COLS = 4; //three columns
+char keys[ROWS][COLS] = {
+  {'1','2','3','/'},
+  {'4','5','6','*'},
+  {'7','8','9','-'},
+  {'C','0','=','+'}
+};
+byte rowPins[ROWS] = {A0, A1, 11, 10}; //connect to the row pinouts of the keypad
+byte colPins[COLS] = {9, 8, 7, 6}; //connect to the column pinouts of the keypad
+
+Keypad keypad = Keypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS );
+
+int posStart = 7;
+int num1, num2, num3;
+int hitung= 0;
+int ctrNumber= 0;
+
+bool start= false;
+bool input_num1= true,
+	 input_num2= false,
+	 input_num3= false;
+
+String input= "INPUT:",
+  	   hasil= "HASIL:";
+String opt[2]= {"", ""};
+
+char key;
+
+void setup(){
+   Serial.begin(9600);
+   lcd.begin(16, 2);
+   
+   lcd.setCursor(0, 0);
+   lcd.print("   CALCULATOR   ");
+   
+   lcd.setCursor(0, 1);
+   lcd.print("   217116615");
+}
+  
+void loop(){
+  char key = keypad.getKey();
+  
+  if (key) {
+    lcd.clear();
+    
+    lcd.setCursor(0, 0);
+    lcd.print(input);
+    
+    lcd.setCursor(0, 1);
+    lcd.print(hasil);
+    
+  	start= true;
+  }
+  
+  if (start) {
+    if (key == '/' ||
+        key == '*' ||
+        key == '-' ||
+        key == '+' ||
+        key == '=') { //OPERATOR
+      Serial.println("operator");
+      
+      if (key == '=') {
+        Serial.println("hitung");
+        
+        if (ctrNumber == 2) {
+          if (opt[0] == "/") hitung= num1/num2;
+          else if (opt[0] == "*") hitung= num1*num2;
+          else if (opt[0] == "-") hitung= num1-num2;
+          else hitung= num1+num2;
+           
+          hasil+= String(hitung);
+        } else if (ctrNumber == 3){
+          if (opt[0] == "/") hitung= num1/num2;
+          else if (opt[0] == "*") hitung= num1*num2;
+          else if (opt[0] == "-") hitung= num1-num2;
+          else hitung= num1+num2;
+            
+          if (opt[1] == "/") hitung/= num3;
+          else if (opt[1] == "*") hitung*= num3;
+          else if (opt[1] == "-") hitung-= num3;
+          else hitung+= num3;
+          
+          hasil+= String(hitung);
+        }
+      } else {
+        Serial.println("belum hitung");
+        
+      	if (input_num1) {
+          Serial.println("ke input2");
+          input_num1= false;
+          input_num2= true;
+          opt[0]= String(key);
+        } else if (input_num2) {
+          Serial.println("ke input3");
+          input_num2= false;
+          input_num3= true;
+          opt[1]= String(key);
+        } else if (input_num3) {
+          Serial.println("selesai");
+          input_num3= false;
+        }
+      }
+            
+      input+= String(key);
+      
+      lcd.clear();
+    } else if (key == 'C') { //CLEAR
+      input= "INPUT:";
+      hasil= "HASIL:";
+      num1= 0, num2= 0, num3= 0;
+      input_num1= true, input_num2= false, input_num3= false;
+      opt[0]= ""; opt[1]= "";
+      ctrNumber= 0;
+      
+      lcd.clear();
+    } else { //ANGKA
+       Serial.println("num");
+       
+       if (key && input_num1) {
+        Serial.println("num1");
+       	num1+= String(key).toInt();
+        input+= String(key);
+        ctrNumber++;
+        
+        lcd.clear();
+      }
+      
+      if (key && input_num2) {
+        Serial.println("num2");
+       	num2+= String(key).toInt();
+        input+= String(key);
+        ctrNumber++;
+        
+        lcd.clear();
+      } 
+      
+      if (key && input_num3) {
+        Serial.println("num2");
+       	num3+= String(key).toInt();
+        input+= String(key);
+        ctrNumber++;
+        
+        lcd.clear();
+      }
+    }          
+    
+    lcd.setCursor(0, 0);
+    lcd.print(input);
+    
+    lcd.setCursor(0, 1);
+    lcd.print(hasil);
+  }
+}

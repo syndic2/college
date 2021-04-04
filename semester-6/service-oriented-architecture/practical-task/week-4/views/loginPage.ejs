@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            * {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 1.5vw;
+            }
+
+            body {
+                background-color: orange;
+            }
+
+            #loginBox {
+                background-color: white;
+                text-align: center;
+                width: 25%;
+                margin-top: 12%;
+                margin-left: 35%;
+                padding: 2%;
+            }
+
+            #loginBox input[type] {
+                border: none;
+                width: 100%;
+            }
+
+            #loginBox input[type=text] {
+                background-color: lightgrey;
+                padding: 2% 0 2% 0;
+            }
+
+            #loginBox input[type=submit] {
+                background-color: green;
+                color: white;
+                outline: none;
+                margin-top: 1%;
+                padding: 2.5% 5% 2.5% 5%;
+            }
+
+            #loginBox input[type=submit]:hover {
+                cursor: pointer;
+            }
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="/jquery-3.4.1.min.js"></script>
+        <title>Login Page</title>
+    </head>
+    <body>
+        <div id="loginBox">
+            <h1>LOGIN PAGE</h1>
+            <form id="formLogin">
+                <input placeholder="Username" type="text" name="username"> <br> <br>
+                <input placeholder="Password" type="text" name="password"> <br> <br>
+                <input type="submit" value="LOGIN">
+            </form> <br>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function() {
+            $('#formLogin').submit(function(e) {
+                e.preventDefault();
+                
+                $.ajax({
+                    url: 'http://localhost:3000/checkLogin',
+                    type: 'POST',
+                    data: $(this).serialize(),
+                    success: (result) => {
+                        if (result.type === 'error_password') {
+                            alert(result.msg);
+                        } else if (result.type === 'null_field') {
+                            alert(result.msg);
+                        } else if (result.type === 'success_login') {
+                            alert(result.msg);
+                            window.location.href= result.url;
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</html>

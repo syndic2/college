@@ -1,0 +1,281 @@
+{
+	"info": {
+		"_postman_id": "0f5ae2ce-6012-4945-9f73-dfdf0d0bbeb8",
+		"name": "6615",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api/registerUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email_user",
+							"value": "ivan@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "nama_user",
+							"value": "ivan",
+							"type": "text"
+						},
+						{
+							"key": "nohp",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "saldo",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "tipe_user",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password_user",
+							"value": "asd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/registerUser",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"registerUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/topUp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email_user",
+							"value": "jonsu@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "nominal_topup",
+							"value": "1000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/topUp",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"topUp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/getPremium",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email_user",
+							"value": "gidion@mail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/getPremium?api_key=gjU534Z5Hl",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"getPremium"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "gjU534Z5Hl"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/addApiSubscription",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email_user",
+							"value": "jonsu@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "jumlah_hit",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/addApiSubscription",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"addApiSubscription"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/createReport",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "judul_laporan",
+							"value": "Orang bergerak curiga",
+							"type": "text"
+						},
+						{
+							"key": "tanggal_laporan",
+							"value": "29/11/2023",
+							"type": "text"
+						},
+						{
+							"key": "deskripsi_laporan",
+							"value": "Sangat mencurigakan",
+							"type": "text"
+						},
+						{
+							"key": "jenis_kriminalitas",
+							"value": "aktivitas mencurigakan",
+							"type": "text"
+						},
+						{
+							"key": "alamat_kejadian",
+							"value": "Nipis 22",
+							"type": "text"
+						},
+						{
+							"key": "kode_pos_alamat",
+							"value": "60241",
+							"type": "text"
+						},
+						{
+							"key": "email_pelapor",
+							"value": "ivan@mail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/createReport?api_key=r6Z09A0F36",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"createReport"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "r6Z09A0F36"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/searchReport",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3000/api/searchReport?apiKey=r6Z09A0F36",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"searchReport"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "r6Z09A0F36"
+						},
+						{
+							"key": "jenis_kriminalitas",
+							"value": "tabrak lari",
+							"disabled": true
+						},
+						{
+							"key": "zip_code",
+							"value": "60235",
+							"disabled": true
+						},
+						{
+							"key": "tahun",
+							"value": "2020",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

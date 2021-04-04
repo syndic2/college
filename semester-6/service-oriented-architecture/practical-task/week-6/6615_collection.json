@@ -1,0 +1,280 @@
+{
+	"info": {
+		"_postman_id": "69daef15-f285-42e0-befe-c004e8480445",
+		"name": "6615",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api/registerUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email_user",
+							"value": "jonsu@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "nama_user",
+							"value": "jonsu",
+							"type": "text"
+						},
+						{
+							"key": "password_user",
+							"value": "asd",
+							"type": "text"
+						},
+						{
+							"key": "tipe_user",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/registerUser",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"registerUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/loginUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email_user",
+							"value": "jonsu@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "password_user",
+							"value": "asd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/loginUser",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"loginUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/createRecipe",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbF91c2VyIjoiZ2lkaW9uQG1haWwuY29tIiwidGlwZV91c2VyIjoyLCJpYXQiOjE1ODc0NjgyNDB9.ws1hRHun5tHP-HZ419gVsuLp5pTZnXkWd3inZd2WA9A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "judul_resep",
+							"value": "Nasi Goreng",
+							"type": "text"
+						},
+						{
+							"key": "bahan_resep",
+							"value": "nasi putih, telur, bawang",
+							"type": "text"
+						},
+						{
+							"key": "kategori_resep",
+							"value": "Main Course",
+							"type": "text"
+						},
+						{
+							"key": "estimasi_waktu",
+							"value": "10 menit",
+							"type": "text"
+						},
+						{
+							"key": "email_user",
+							"value": "jonsu@mail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/createRecipe",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"createRecipe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/searchRecipe",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbF91c2VyIjoiZ2lkaW9uQG1haWwuY29tIiwidGlwZV91c2VyIjoyLCJpYXQiOjE1ODc0NjkzOTR9.h6NVDIxoQaCu3tJOLG5xb1GhUC1ByT2SDMGLlJHQWDc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3000/api/searchRecipe?query=goreng&exclude=bawang",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"searchRecipe"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "goreng"
+						},
+						{
+							"key": "exclude",
+							"value": "bawang"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/reviewRecipe",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbF91c2VyIjoiam9uc3VAbWFpbC5jb20iLCJ0aXBlX3VzZXIiOjAsImlhdCI6MTU4NzQ2ODkwMn0.8fgOnBb35YTWsmswPkZf-dEL3P-bEpU5VvpdJSPkFv8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "kode_resep",
+							"value": "REMC001",
+							"type": "text"
+						},
+						{
+							"key": "email_reviewer",
+							"value": "jonsu@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "isi_review",
+							"value": "nasi goreng enak",
+							"type": "text"
+						},
+						{
+							"key": "tanggal_review",
+							"value": "22/04/2020",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/reviewRecipe",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"reviewRecipe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/getReview",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbF91c2VyIjoiam9uc3VAbWFpbC5jb20iLCJ0aXBlX3VzZXIiOjAsImlhdCI6MTU4NzQ2OTAyMX0.kv2X2csM6EzPtO2jq-oFlcZXJ0XOwnCMyyE74eojUxk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3000/api/getReview?date=22/04/2020",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"getReview"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "22/04/2020"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

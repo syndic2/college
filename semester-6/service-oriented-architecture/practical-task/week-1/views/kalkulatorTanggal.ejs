@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            #nav {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            #nav a {
+                padding-top: 1.5%;
+                padding-bottom: 1.5%;
+            }
+
+            form {
+                text-align: center;
+            }
+
+            form input {
+                margin-top: 1%;
+                margin-bottom: 1%;
+            }
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kalkulator Tanggal</title>
+    </head>
+    <body>
+        <div id="nav">
+            <a href="http://localhost:8080/kalkulatorBilanganPage">
+                <button>Ke Kalkulator Bilangan</button>
+            </a>
+            <h2>Kalkulator Tanggal Sederhana</h2>
+            <a href="http://localhost:8080/kalkulatorDecimalOctalPage">
+                <button>Ke Kalkulator Decimal Octal</button>
+            </a>
+        </div>
+        
+        <form action="http://localhost:8080/calculateTanggal" method="POST">
+            Masukkan tanggal pertama <br>
+            <input type="date" name="val1"> <br>
+            
+            Masukkan tanggal kedua <br>
+            <input type="date" name="val2"> <br>
+
+            <input type="submit" value="Hitung">
+        </form>
+
+        <% if (typeof result !== 'undefined') { %>
+            <br>
+            <div style="text-align: center; font-size: 2vw;">
+                <% if (typeof result.error !== 'undefined') { %>
+                    <%= result.error %>
+                <% } else { %>                    
+                    <%= result.days %> <br> <br>
+                    atau <br> <br>
+                    <%= result.converted %>
+                <% } %> 
+            </div>
+        <% } %> 
+    </body>
+</html>

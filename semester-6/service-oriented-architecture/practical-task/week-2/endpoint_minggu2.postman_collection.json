@@ -1,0 +1,293 @@
+{
+	"info": {
+		"_postman_id": "d5da524b-248c-47f0-9b8a-35e381237738",
+		"name": "endpoint_minggu2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/registerUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email_user",
+							"value": "felix@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "nama_user",
+							"value": "felix",
+							"type": "text"
+						},
+						{
+							"key": "password_user",
+							"value": "asd",
+							"type": "text"
+						},
+						{
+							"key": "tipe_user",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/registerUser",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"registerUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/uploadSong",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id_user",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "judul_lagu",
+							"value": "MarVeiL",
+							"type": "text"
+						},
+						{
+							"key": "genre_lagu",
+							"value": "jazz",
+							"type": "text"
+						},
+						{
+							"key": "durasi_lagu",
+							"value": "60",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/uploadSong",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"uploadSong"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/createPlaylist",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email_user",
+							"value": "felix@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "judul_playlist",
+							"value": "My Favorite 3",
+							"type": "text"
+						},
+						{
+							"key": "collection_lagu",
+							"value": "1, 4, 3 ",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/createPlaylist",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"createPlaylist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/searchSongByKeyword/:keyword",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/searchSongByKeyword/:keyword",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"searchSongByKeyword",
+						":keyword"
+					],
+					"variable": [
+						{
+							"key": "keyword",
+							"value": "song"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/deleteSong/:judul_lagu",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/deleteSong/:judul_lagu",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"deleteSong",
+						":judul_lagu"
+					],
+					"variable": [
+						{
+							"key": "judul_lagu",
+							"value": "Song 1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/getPlaylist/:email_user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3000/getPlaylist/:email_user",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getPlaylist",
+						":email_user"
+					],
+					"variable": [
+						{
+							"key": "email_user",
+							"value": "felix@mail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/updatePlaylist/id_playlist",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "judul_playlist",
+							"value": "Good Song Oh Yeah 2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/updatePlaylist/:id_playlist",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"updatePlaylist",
+						":id_playlist"
+					],
+					"variable": [
+						{
+							"key": "id_playlist",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

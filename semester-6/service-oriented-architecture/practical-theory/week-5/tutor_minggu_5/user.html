@@ -1,0 +1,64 @@
+<html>
+    <head>
+    </head>
+    <body>
+		<p style="font-size:30px;" id="welcome-message"></p>
+        <h2>Data All User <button onclick="getAllUser()">Load Data User</button></h2> 
+        <table border=1>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody id="table-user">
+                    
+            </tbody>
+        </table>
+        <span style="display:none" id="message-delete"></span>
+    </body>
+</html>
+<script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+<script>
+	const queryString = window.location.search;
+	const urlParams = new URLSearchParams(queryString);
+	const user = urlParams.get('user');
+	$('#welcome-message').text("Welcome, "+user);
+    function getAllUser(){
+        $.ajax({
+            url : "http://localhost:3000/api/getAllUser",
+            method : "get",
+            success : function(data){
+                let row = "";
+                data.forEach(element => {
+                    row += "<tr>";
+                    row += "    <td>" + element.id + "</td>";
+                    row += "    <td>" + element.username + "</td>";
+                    row += "    <td><button onclick='deleteUser("+element.id+")'>Delete</button></td>";
+                    row += "</tr>";
+                });
+                $("#table-user").html(row);
+            }
+        });
+    }
+    function deleteUser(id){
+        $.ajax({
+            url : "http://localhost:3000/api/deleteUser/" + id,
+            method : "delete",
+            success : function(data){
+                // data = JSON.parse(data);
+                if (data.status == 0){
+                    $("#message-delete").css("color", "red");
+                }else if (data.status == 1){
+                    $("#message-delete").css("color", "green");
+                }
+                $("#message-delete").html(data.message);
+                $("#message-delete").fadeIn();
+                setTimeout(function(){
+                    $("#message-delete").fadeOut();
+                }, 1000);
+            }
+        });
+    }
+</script>

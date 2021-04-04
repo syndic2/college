@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page</title>
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h1>Login Page</h1>
+        <form id="formLogin">
+            Username: <input type="text" name="username" id="username"> <br>
+            Password: <input type="text" name="password"> <br>
+            <input type="submit" name="Login">
+        </form>
+        <a href="./register.html.html">
+            <button>Go To Register</button>
+        </a>
+    </body>
+    <script>
+        $(document).ready(function() {
+            $('#formLogin').submit(function(e) {
+                e.preventDefault();
+
+                let username= $('#username').val();
+
+                $.ajax({
+                    url: 'http://localhost:3000/api/checkLogin',
+                    method: 'POST',
+                    data: $(this).serialize(),
+                    success: (result) => {
+                        if (result.status === 1) {
+                            window.location.href= './admin.html';
+                        } else if (result.status === 2) {
+                            window.location.href= `./user.html?user=${username}`;
+                        }
+
+                        alert(result.message);
+                    }
+                });
+            });
+        });
+    </script>
+</html>

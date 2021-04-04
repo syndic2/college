@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page</title>
+    </head>
+    <body>
+        <h1>Login</h1>
+        <form id="formLogin">
+            Nomor HP: <input type="text" name="nomorhp"> <br>
+            Password: <input type="text" name="password"> <br>
+            <input type="submit" value="Login">
+        </form>
+        <a href="./register.html">
+            <button>To Register</button>
+        </a>
+
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <script>
+            $('#formLogin').submit(function(e) {
+                e.preventDefault();
+
+                $.ajax({    
+                    url: 'http://localhost:3000/api/user',
+                    method: 'POST',
+                    data: $(this).serialize(),
+                    success: (result) => {
+                        if (result.message === 'Sukses') {
+                            let nama= result.data[0].nama;
+                            let nohp= result.data[0].nomorhp;
+                            let saldo= result.data[0].saldo;
+                            let password= result.data[0].password;
+
+                            window.location.href= `./home.html?nama=${nama}&nohp=${nohp}&saldo=${saldo}&password=${password}`;
+                        } else {
+                            window.location.href= './login.html';
+                            alert(result.message);
+                        }
+
+                        //console.log(result.data[0]);
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

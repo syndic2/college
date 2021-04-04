@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Page</title>
+    </head>
+    <body>
+        <a href="./login.html">
+            <button>Logout</button>
+        </a>
+        <h1 id="welcome"></h1>
+        Search by keyword 
+        <input type="text" id="keyword">
+        <button id="btnSearch">Search</button> <br> <br>
+
+        <div id="product"></div>
+
+        <script src="./jquery-3.4.1.min.js"></script>
+        <script>
+            const queryString = window.location.search;
+	        const urlParams = new URLSearchParams(queryString);
+	        const user = urlParams.get('user');
+
+            $('#welcome').text(`Welcome, ${user}!`);
+
+            $('#btnSearch').click(function() {
+                let keyword= $('#keyword').val();
+
+                $.ajax({
+                    url: `http://localhost:3000/api/searchProduct/${keyword}`,
+                    method: 'GET',
+                    success: (result) => {
+                        let div= '';
+
+                        $('#product').html('');
+
+                        result.forEach(item => {
+                        let kategori= '';
+
+                        if (item.kategori_product === 0) kategori= 'Makanan';
+                        if (item.kategori_product === 1) kategori= 'Minuman';
+                        if (item.kategori_product === 2) kategori= 'Houseneeds';
+
+                        div+= `
+                            <div style="border: 1px solid black; padding: 1%;">
+                                ${item.nama_product} <br>
+                                ${item.harga_product} <br>
+                                ${kategori}
+                            </div>
+                            <br>
+                        `
+                        });
+
+                        $('#product').append(div);
+                    }
+                });
+            });
+
+           $.ajax({
+               url: 'http://localhost:3000/api/getAllProducts',
+               method: 'GET',
+               dataType: 'json',
+               success: (result) => {
+                    let div= '';
+
+                    result.forEach(item => {
+                        let kategori= '';
+
+                        if (item.kategori_product === 0) kategori= 'Makanan';
+                        if (item.kategori_product === 1) kategori= 'Minuman';
+                        if (item.kategori_product === 2) kategori= 'Houseneeds';
+
+                        div+= `
+                            <div style="border: 1px solid black; padding: 1%;">
+                                ${item.nama_product} <br>
+                                ${item.harga_product} <br>
+                                ${kategori}
+                            </div>
+                            <br>
+                        `
+                    });
+
+                    $('#product').append(div);
+               }
+           });
+        </script>
+    </body>
+</html>

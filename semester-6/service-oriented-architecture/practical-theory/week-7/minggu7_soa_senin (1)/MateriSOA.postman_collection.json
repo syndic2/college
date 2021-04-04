@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "54fcfa7c-ef5e-47c4-8467-526b288bb5bf",
+		"name": "MateriSOA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/api/registerUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "felixdeasss@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "nama",
+							"value": "felix",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "asd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/registerUser",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"registerUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/topup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "felixdeasss@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "nominal",
+							"value": "25000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/topup",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"topup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/subscribeAPI",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "felixdeasss@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/subscribeAPI",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"subscribeAPI"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/addLaporan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "judul",
+							"value": "Kambing lepas",
+							"type": "text"
+						},
+						{
+							"key": "jenis",
+							"value": "L",
+							"type": "text"
+						},
+						{
+							"key": "deskripsi",
+							"value": "sangat sedih sekali",
+							"type": "text"
+						},
+						{
+							"key": "barang",
+							"value": "hewan",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "Jl di sana",
+							"type": "text"
+						},
+						{
+							"key": "tanggal",
+							"value": "2020-04-04",
+							"type": "text"
+						},
+						{
+							"key": "kodepos",
+							"value": "77777",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "felixdeasss@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "apikey",
+							"value": "9091497504",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/addLaporan",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"addLaporan"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

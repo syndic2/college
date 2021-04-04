@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register Page</title>
+    </head>
+    <body>
+        <h1>Registrasi</h1>
+        <form id="formRegister">
+            Nama: <input type="text" name="nama"> <br>
+            Alamat: <input type="text" name="alamat"> <br>
+            Nomor HP: <input type="text" name="nomorhp"> <br>
+            Password: <input type="text" name="password"> <br>
+            Confirm Password: <input type="text" name="cpassword"> <br>
+            <input type="hidden" name="saldo" value="0">
+            <input type="submit" value="Register">
+        </form>
+        <a href="./login.html">
+            <button>To Login</button>
+        </a>
+
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <script>
+            $('#formRegister').submit(function(e) {
+                e.preventDefault();
+
+                $.ajax({    
+                    url: 'http://localhost:3000/api/register',
+                    method: 'POST',
+                    data: $(this).serialize(),
+                    success: (result) => {
+                        alert(result.message);
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

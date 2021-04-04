@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="/jquery-3.4.1.min.js"></script>
+        <title>Admin Page</title>
+    </head>
+    <body>
+        <a href="http://localhost:3000/logout">
+            <button>Logout</button>
+        </a>
+        <h2 style="text-align: center;">Halaman Admin</h2>
+        <h2>Upload Berita</h2>
+
+        <form id="formUpload" enctype="multipart/form-data">
+            Judul Berita: <input type="text" name="judul_berita"> <br> <br>  
+            
+            Kategori Berita 
+            <select name="kategori_berita">
+                <option value="politik">Politik</option>
+                <option value="lifestyle">Lifestyle</option>
+                <option value="olahraga">Olahraga</option>
+            </select> <br> <br>
+            
+            Isi Berita <br> <br>
+            <textarea name="isi_berita" cols="50" rows="10"></textarea> <br> <br>
+            
+            Tanggal Berita <input type="datetime-local" name="tgl_berita"> <br> <br>
+            
+            Upload your photo <input type="file" name="gambar_berita" required> <br> <br>
+            
+            <input type="submit" value="Post"> 
+        </form> <br>
+
+        <h2>List Semua Berita</h2> 
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID Berita</th>
+                    <th>Judul Berita</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% if (news) { %>
+                    <% news.forEach(n => { %>
+                        <tr>
+                            <td><%= n.id %></td>
+                            <td><%= n.judul_berita %></td>
+                            <td>
+                                <button class="btnDelete" param="<%= n.id %>">Delete</button>
+                            </td>
+                        </tr>
+                    <% }); %>
+                <% } %>
+            </tbody>
+        </table>
+    </body>
+    <script>
+        $(document).ready(function() {
+            $('#formUpload').submit(function(e) {
+                e.preventDefault();
+                
+                let formData= new FormData(this);
+
+                $.ajax({
+                    url: 'http://localhost:3000/uploadBerita',
+                    type: 'POST',
+                    data: formData,
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    success: (result) => {
+                        if (result.type === 'null_field') {
+                            alert(result.msg);
+                        } else if (result.type === 'success_upload') {
+                            alert(result.msg);
+                            window.location.reload();
+                        } else if (result.type === 'error_upload') {
+                            alert(result.msg);
+                            window.location.reload();
+                        }
+                    }
+                });
+            });
+
+            $('.btnDelete').click(function() {
+                let id= $(this).attr('param');
+                
+                $.ajax({
+                    url: `http://localhost:3000/deleteBerita/${id}`,
+                    type: 'DELETE',
+                    success: (result) => {  
+                        alert(result);
+                        window.location.reload();
+                    }
+                });
+            });
+        });
+    </script>
+</html>

@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "9bc8aeac-f26e-4d08-a880-dd8756663e0c",
+		"name": "6615",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/api/addUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nomorhp",
+							"value": "231",
+							"type": "text"
+						},
+						{
+							"key": "nama",
+							"value": "ivan",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "asd",
+							"type": "text"
+						},
+						{
+							"key": "tipe_user",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "saldo",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/addUser",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"addUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/topUp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3000/api/topUp?key=1255710697&jumlah_topup=1000",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"topUp"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "1255710697"
+						},
+						{
+							"key": "jumlah_topup",
+							"value": "1000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/addSong",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "judul_lagu",
+							"value": "i miss you2",
+							"type": "text"
+						},
+						{
+							"key": "genre",
+							"value": "romance",
+							"type": "text"
+						},
+						{
+							"key": "durasi",
+							"value": "1m 30s",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/addSong?key=1372104556\n",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"addSong"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "1372104556\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/song",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "id_lagu",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/song?key=1372104556\n",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"song"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "1372104556\n"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

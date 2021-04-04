@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Edit Page</title>
+    </head>
+    <body>  
+        <h1>Edit Profile</h1>
+        
+        <form id="formEdit">
+            Nama: <input type="text" name="nama"> <br>
+            Alamat: <input type="text" name="alamat"> <br>
+            Nomor HP: <input type="text" name="nomorhp" id="nomorhp" disabled> <br>
+            Password: <input type="text" name="password" id="password" disabled> <br>
+            <input type="submit" value="Save">
+        </form>
+
+        <button id="btnBack">Back</button> <br>
+
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <script>
+            const queryString = window.location.search;
+	        const urlParams = new URLSearchParams(queryString);
+            const nama = urlParams.get('nama');
+            const nohp = urlParams.get('nohp');
+            const saldo = urlParams.get('saldo');
+            const password= urlParams.get('password');
+
+            $('#nomorhp').attr('value', nohp);
+            $('#password').attr('value', password);
+            
+            $('#formEdit').submit(function(e) {
+                e.preventDefault();
+
+                console.log($(this).serialize());
+
+                $.ajax({        
+                    url: 'http://localhost:3000/api/updateUser',
+                    method: 'POST',
+                    data: $(this).serialize(),
+                    success: (result) => {
+                        console.log(result);
+                    }
+                });
+            });
+
+            $('#btnBack').click(function() {
+                window.location.href= `./home.html?nama=${nama}&nohp=${nohp}&saldo=${saldo}&password=${password}`;
+            });
+        </script>
+    </body>
+</html>

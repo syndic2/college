@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            #nav {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            #nav a {
+                padding-top: 1.5%;
+                padding-bottom: 1.5%;
+            }
+
+            form {
+                text-align: center;
+            }
+
+            form input {
+                margin-top: 1%;
+                margin-bottom: 1%;
+            }
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kalkulator Decimal Octal</title>
+    </head>
+    <body>
+        <div id="nav">
+            <a href="http://localhost:8080/kalkulatorTanggalPage">
+                <button>Ke Kalkulator Tanggal</button>
+            </a>
+            <h2>Kalkulator Decimal Octal Sederhana</h2>
+            <a href="http://localhost:8080/kalkulatorBilanganPage">
+                <button>Ke Kalkulator Bilangan</button>
+            </a>
+        </div>
+        
+        <form action="http://localhost:8080/calculateDecimalOctal" method="POST">
+            Jenis penghitungan <br>
+            <input type="radio" name="type" value="decToOct"> Dec to Oct
+            <input type="radio" name="type" value="octToDec"> Oct to Dec <br>
+
+            Masukkan angka <br>
+            <input type="number" name="val" step="any"> <br>
+
+            <input type="submit" value="Hitung">
+        </form>
+
+        <% if (typeof result !== 'undefined') { %>
+            <br> 
+            <div style="text-align: center; font-size: 2vw;">
+                <%= result %>
+            </div>
+        <% } %> 
+    </body>
+</html>

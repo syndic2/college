@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "f39696fa-c184-4f35-a7fa-ca029156d168",
+		"name": "6615",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/api/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nama",
+							"value": "jonsu",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "asd",
+							"type": "text"
+						},
+						{
+							"key": "nomorhp",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "stts",
+							"type": "text"
+						},
+						{
+							"key": "saldo",
+							"value": "0",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "tipe_user",
+							"value": "1",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21vcmhwIjoiMzIxIiwidGlwZSI6MSwiaWF0IjoxNTg2OTM3NDU2fQ.h0wnLHdmLQcRDnApZb8ZU6R7XGWcgZElle3T_WS8K5c",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nomorhp",
+							"value": "1234",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "asd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/addMovie",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21vcmhwIjoiMTIzNCIsInRpcGUiOjAsImlhdCI6MTU4NjkzNzY3M30.V14uOao0miwGT3RFVv_ASrrZZ0QDlYGyMyccuWmsWDc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "judul",
+							"value": "harry potter",
+							"type": "text"
+						},
+						{
+							"key": "tahun",
+							"value": "2011",
+							"type": "text"
+						},
+						{
+							"key": "director",
+							"value": "jk rowling",
+							"type": "text"
+						},
+						{
+							"key": "durasi",
+							"value": "3 jam 20 menit",
+							"type": "text"
+						},
+						{
+							"key": "harga_sewa",
+							"value": "1000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/addMovie",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"addMovie"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
